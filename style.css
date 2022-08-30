@@ -1,4 +1,4 @@
-* {
+body {
   margin: 0;
   padding: 0;
 }
@@ -50,11 +50,11 @@ h1 {
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 0px; /* 0 width - change this with JavaScript */
+  width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
-  top: 0px; /* Stay at the top */
-  left: 0px;
+  top: 0; /* Stay at the top */
+  left: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.8s; /* 0.8 second transition effect to slide in the sidenav */
@@ -161,7 +161,6 @@ footer {
 input[type="text"],
 textarea {
   width: 100%;
-  border: 3px solid goldenrod;
   border-radius: 4px; /* Rounded borders */
   resize: vertical; /* can resize box up and down. */
 }
@@ -169,23 +168,30 @@ textarea {
 input[type="text"],
 textarea {
   padding: 12px;
+  border: 3px solid goldenrod;
 }
 
 select {
   width: 106%;
+  border-radius: 4px;
+}
+
+select{
   padding: 12px;
   border: 3px solid goldenrod;
-  border-radius: 4px;
 }
 /* submit button */
 .contactsubmit {
   background-color: black;
   color: yellow;
-  padding: 12px 20px;
   cursor: pointer;
   font-size: 17px;
   width: 20%;
   margin: auto;
+}
+
+.contactsubmit{
+  padding: 12px 20px;
 }
 
 /* change color of submit */
@@ -256,7 +262,6 @@ label {
 }
 
 #restaurantlogo {
-  position: center;
   width: 840px;
   height: 400px;
 }
