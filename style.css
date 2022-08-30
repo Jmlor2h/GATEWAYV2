@@ -153,23 +153,22 @@ footer {
   text-align: center;
   align-content: center;
   color: yellow;
-}
-
-.feedback {
-  align-content: center;
-  position: relative;
-  background-color: black;
-  color: yellow;
+  justify-content: center;
+  margin: auto;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
 textarea {
   width: 100%;
-  padding: 12px;
   border: 3px solid goldenrod;
   border-radius: 4px; /* Rounded borders */
   resize: vertical; /* can resize box up and down. */
+}
+
+input[type="text"],
+textarea {
+  padding: 12px;
 }
 
 select {
@@ -280,4 +279,10 @@ label {
   justify-content: center;
   text-align: center;
   width: 100%;
+}
+
+#footermedia {
+  text-align: center;
+  align-content: center;
+  justify-content: center;
 }
