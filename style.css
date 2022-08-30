@@ -50,11 +50,11 @@ h1 {
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 0px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
+  top: 0px; /* Stay at the top */
+  left: 0px;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px; /* Place content 20px from the top */
@@ -78,10 +78,9 @@ h1 {
   color: whitesmoke;
 }
 
-/* close button top right  */
+/* close button top left  */
 .sidenav #closebtn {
   position: absolute;
-  top: 0;
   float: left;
   font-size: 40px;
   margin-left: 1px;
@@ -91,7 +90,7 @@ h1 {
   width: 30px;
   height: 5px;
   background-color: yellow;
-  margin: 6px 0;
+  margin: 6px 0px;
 }
 
 .burgerradius {
@@ -171,18 +170,20 @@ footer {
 
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
-select,
 textarea {
   width: 100%;
   padding: 12px;
   border: 3px solid goldenrod;
   border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* padding & width stay in place*/
-  margin-top: 6px; /* top margin */
-  margin-bottom: 16px; /* Bottom margin */
   resize: vertical; /* can resize box up and down. */
 }
 
+select {
+  width: 106%;
+  padding: 12px;
+  border: 3px solid goldenrod;
+  border-radius: 4px;
+}
 /* submit button */
 .contactsubmit {
   background-color: black;
@@ -190,6 +191,7 @@ textarea {
   padding: 12px 20px;
   cursor: pointer;
   font-size: 17px;
+  width: 106%;
 }
 
 /* change color of submit */
@@ -204,6 +206,13 @@ textarea {
   border-radius: 8px;
   background-color: black;
   padding: 20px;
+  max-width: 500px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 .page2 {
@@ -212,16 +221,6 @@ textarea {
 
 label {
   color: yellow;
-}
-
-.zen {
-  font-size: 100px;
-}
-.and {
-  font-size: 50px;
-}
-.soul {
-  font-size: 80px;
 }
 
 .navvv {
@@ -277,4 +276,11 @@ label {
 #contact {
   font-size: 40px;
   align-content: center;
+}
+
+.contactcontainer {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
