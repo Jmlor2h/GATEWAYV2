@@ -68,3 +68,9 @@ button:hover {
   cursor: pointer;
   background-color: whitesmoke;
 }
+
+#MENU {
+  text-align: center;
+  font-size: 60px;
+  text-shadow: -3px 3px 10px gold;
+}
