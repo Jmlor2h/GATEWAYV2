@@ -50,8 +50,9 @@ div {
 
 .itemdesc {
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
+  white-space: pre-wrap
 }
 
 .addtocart {
