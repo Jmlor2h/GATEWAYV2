@@ -258,8 +258,11 @@ label {
   width: 140px;
   height: 66px;
   position: relative;
-  right: 500%;
-  top: 20px;
+  top: -38px;
+  float: left;
+  margin: auto;
+  margin-left: 5%;
+  
 }
 
 #restaurantlogo {
