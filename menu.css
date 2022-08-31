@@ -65,6 +65,6 @@ button{
 
 button:hover {
   color: black;
-  background-color: gray;
   cursor: pointer;
+  background-color: whitesmoke;
 }

@@ -31,10 +31,12 @@
       </div>
 
       <!--  open the sidenav -->
-      <span onclick="openNav()"><div class="burgerradius">
-        <div class="burger"></div>
-        <div class="burger"></div>
-        <div class="burger"></div></span>
+      <div onclick="openNav()">
+        <div class="burgerradius">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+        </div>
       </div>
       <ul>
       <li><a id="zlogoa" href="index.html"><img id="zenlogo" src="images/zlogoooo.png" alt="zen and soul logo"></a></li>
@@ -56,23 +58,24 @@
   <main class="contactcontainer">
   <div class="container">
         <div class="column">
+          <form>
           <label for="fname"> <strong>First Name</strong> </label>
           <br>
-          <input type="text" id="fname" name="First Name" placeholder="Your First Name Here">
+          <input type="text" id="fname" name="First Name" placeholder="Your First Name Here" required>
 
           <br>
           <br>
 
           <label for="lname"><strong>Last Name</strong> </label><br>
-          <input type="text" id="lname" name="Last Name" placeholder="Your Last Name Here">
+          <input type="text" id="lname" name="Last Name" placeholder="Your Last Name Here" required>
           <br>
           <br>
           <label for="Email"> <strong>Email</strong> </label><br>
-          <input type="text" id="mail" name="Email" placeholder="Your Email Here">
+          <input type="text" id="Email" name="Email" placeholder="Your Email Here" required>
           <br>
           <br>
           <div><label for="State"><strong>State</strong></label><br>
-            <select id="State" name="State">
+            <select id="State" name="State" required>
               <option value="" selected="selected">Select a State</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
@@ -128,11 +131,12 @@
             </select>
           </div>
           <br>
-          <label for="Store Address"> <strong>Store Address</strong> </label><br>
-          <input type="text" id="Store Address" name="Store Address" placeholder="EX: Address, City, Zip Code">
+          <label for="StoreAddress"> <strong>Store Address</strong> </label><br>
+          <input type="text" id="StoreAddress" name="StoreAddress" placeholder="EX: Address, City, Zip Code" required>
           <br><br>
           <label for="Subject"><strong>Subject</strong></label><br>
-          <textarea id="Subject" name="Subject" placeholder="Questions & Feedback Here"></textarea>
+          <textarea id="Subject" name="Subject" placeholder="Questions & Feedback Here" required></textarea>
+        </form>
         </div>
         <button class="contactsubmit">
           <strong>Submit</strong></button>
